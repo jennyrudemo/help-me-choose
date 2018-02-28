@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+  background-color: #eacece;
+  color: #776161;
+}
+
+h1{
+  font-weight: lighter;
+  font-size: 40 px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.inputSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px 35px 0px;
+  width: 400px;
+}
+
+.inputs {
+    style: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter{
+  margin-top: 50px;
+}
+
+input{
+  margin-top: 10px;
+}
+
+button{
+    background-color: #ba9393;
+    color: #684f4f;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 10px;
+}
+
+.addOption{
+  margin-top: 20px;
+}
+
+.go{
+  font-size: 18px;
+  padding: 5px 20px;
+}
