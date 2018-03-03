@@ -13,6 +13,7 @@
       </div>
       <button class="addOption">Add</button>
     </div>
+    <div class="resultSection"></div>
     <button class="go">Go!</button>
     <div class="newsletter">
       <p>Sign up for more info! </p>
@@ -23,5 +24,22 @@
         <input type="submit" value="Submit">
       </form>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+          /*add function that autofocuses on the last added input field*/
+          /*add "and" between last and next to last input field*/
+        }
+
+        $('.addOption').click(add_option)
+
+
+      })
+    </script>
   </body>
 </html>
