@@ -7,6 +7,10 @@
   </head>
   <body>
     <h1>Help med choose between...</h1>
+    <div class="title">
+      <h1 class=start-title>Help me choose between...</h1>
+    </div>
+
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="type here..."autofocus></input>
@@ -38,6 +42,21 @@
 
         $('.addOption').click(add_option)
 
+        var options = []
+        var submit= function() {
+          $('.inputSection').hide()
+          $('.resultSection').css('display','flex')
+          $('input').each(function() {
+              options.push($(this).val())
+          })
+          var winner = options  [Math.floor(Math.random() * options.length)]
+          console.log(winner)
+          $('.start-title').hide()
+          $('.title').text('You should pick:')
+          $('.resultSection').text(winner)
+        }
+
+        $('.go').click(submit)
 
       })
     </script>
