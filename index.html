@@ -17,7 +17,9 @@
       </div>
       <button class="addOption">Add</button>
     </div>
+
     <div class="resultSection"></div>
+
     <button class="go">Go!</button>
     <div class="newsletter">
       <p>Sign up for more info! </p>
@@ -29,10 +31,13 @@
       </form>
     </div>
 
+    <button class="restart">Back</button>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
       $(function() {
         $('.resultSection').hide()
+        $('.restart').hide()
 
         var add_option = function() {
           $('.inputs').append('<input></input>')
@@ -46,6 +51,7 @@
         var submit= function() {
           $('.inputSection').hide()
           $('.resultSection').css('display','flex')
+          $('.restart').css('display','flex')
           $('input').each(function() {
               options.push($(this).val())
           })
@@ -57,6 +63,12 @@
         }
 
         $('.go').click(submit)
+
+        var restart = function() {
+        $('script').reload()
+        }
+
+        $('.restart').click(restart)
 
       })
     </script>
