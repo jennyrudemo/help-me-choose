@@ -39,6 +39,14 @@ input{
   margin-top: 10px;
 }
 
+.resultSection {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
 button{
     background-color: #ba9393;
     border-color: #684f4f;
